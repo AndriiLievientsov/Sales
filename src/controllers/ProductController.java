@@ -1,11 +1,11 @@
 package controllers;
 
 import models.Product;
+import utils.Rounder;
 import views.SalesView;
 
 // Controller
 public class ProductController {
-
     Product model;
     SalesView view;
 
@@ -16,13 +16,18 @@ public class ProductController {
     }
 
     public void runApp() {
-
         view.getInputs();
 
         // Здесь, реализуйте:
         // 1) получение имени товара через модель;
+        model.getName();
         // 2) вызов методов расчетов доходов и налога;
+        model.incomeCalculations();
+        model.incomeTaxCalculation();
+        model.NetIncomeCalculation();
+
         // 3) округление расчетных значений;
+
         // 4) вывод расчетов по заданному формату.
 
         String output = "[здесь должен быть вывод по формату]";

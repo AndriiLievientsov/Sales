@@ -1,12 +1,12 @@
 package views;
 
 
+import utils.Validator;
+
 import java.util.Scanner;
 
 // View
 public class SalesView {
-
-
     String title;
     String name;
     int quantity;
@@ -16,9 +16,15 @@ public class SalesView {
     // Здесь, создайте конструктор данного класса,
     // который в параметре содержит переменную типа модели.
 
+    public SalesView(String title, String name, int quantity, double price, Scanner scanner) {
+        this.title = title;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+        this.scanner = scanner;
+    }
 
     public void getInputs() {
-
         scanner = new Scanner(System.in);
 
         title = "Введите наименование товара: ";
