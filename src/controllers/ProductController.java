@@ -22,8 +22,8 @@ public class ProductController {
         // 1) получение имени товара через модель;
         model.getName();
         // 2) вызов методов расчетов доходов и налога;
-        model.incomeCalculations();
-        model.incomeTaxCalculation();
+        model.IncomeCalculations();
+        model.IncomeTaxCalculation();
         model.NetIncomeCalculation();
 
         // 3) округление расчетных значений;
