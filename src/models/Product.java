@@ -15,7 +15,7 @@ public class Product implements Income, Fiscal {
     // здесь ...
     final double taxRate = 5.0;
 
-    public Product(String name, int quantity, double price, double taxRate) {
+    public Product(String name, int quantity, double price) {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
