@@ -50,6 +50,8 @@ public class Product implements Income, Fiscal {
     }
 
 
+
+
     // Переопределите методы реализуемых интерфейсов.
 
     // Расчёт суммы налога с продаж.

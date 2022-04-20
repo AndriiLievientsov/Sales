@@ -1,13 +1,13 @@
 package controllers;
 
 import models.Product;
-import utils.Rounder;
 import views.SalesView;
 
 // Controller
 public class ProductController {
     Product model;
     SalesView view;
+
 
     // Конструктор
     public ProductController(Product model, SalesView view) {
@@ -17,6 +17,8 @@ public class ProductController {
 
     public void runApp() {
         view.getInputs();
+
+
 
         // Здесь, реализуйте:
         // 1) получение имени товара через модель;

@@ -43,6 +43,7 @@ public class SalesView {
         price = Validator.validatePriceInput(scanner);
 
         scanner.close();
+
     }
 
     public void getOutput(String output) {

@@ -10,12 +10,12 @@ public class App {
         // на основании соответствующих конструкторов.
 //        Product model = new Product();
 //        SalesView view = new SalesView();
-        ProductController controller = new ProductController();
+//        ProductController controller = new ProductController();
 
         // Запуск программы/приложения.
         // Раскомментированный код будет корректным после
         // правильной настройки приложения
-         controller.runApp();
+//         controller.runApp();
 
 
 
