@@ -11,16 +11,13 @@ public class Product implements Income, Fiscal {
     private String name;
     private int quantity;
     private double price;
+    protected double profit;
+    protected  double tax;
+    protected  double netIncome;
+
     // Налоговоу ставку объявите в виде константы
     // здесь ...
     final double taxRate = 5.0;
-
-    public Product(String name, int quantity, double price) {
-        this.name = name;
-        this.quantity = quantity;
-        this.price = price;
-//        this.taxRate = taxRate;
-    }
 
     // Обеспечьте доступ к полям модели через getters и setters
     // здесь ...
@@ -59,19 +56,24 @@ public class Product implements Income, Fiscal {
     // здесь ...
     @Override
     public void IncomeTaxCalculation() {
-
+        tax = profit * taxRate;
+        System.out.println("Сумма налога (грн.): " + tax);
     }
+
     // Расчёт дохода от продаж, до уплаты налога.
     // здесь ...
     @Override
     public void IncomeCalculations() {
-        double Profit = quantity * price;
+        profit = quantity * price;
+        System.out.println("Общий доход (грн.): " + profit);
     }
 
     // Расчёт чистого дохода, после уплаты налога.
     // здесь ...
     @Override
     public void NetIncomeCalculation() {
+        netIncome = profit - tax;
+        System.out.println("Чистый доход (грн.): " + netIncome);
 
     }
 

@@ -8,14 +8,14 @@ public class App {
 
         // Здесь создайте экземпляры Model, View и Controller,
         // на основании соответствующих конструкторов.
-        Product model = new Product("Watermelon",1,17.36);
+//        Product model = new Product();
 //        SalesView view = new SalesView();
-//        ProductController controller = new ProductController();
+        ProductController controller = new ProductController();
 
         // Запуск программы/приложения.
         // Раскомментированный код будет корректным после
         // правильной настройки приложения
-//         controller.runApp();
+         controller.runApp();
 
 
 
