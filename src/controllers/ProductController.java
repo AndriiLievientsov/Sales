@@ -21,7 +21,8 @@ public class ProductController {
 
         // Здесь, реализуйте:
         // 1) получение имени товара через модель;
-        model.getName();
+//        model.getName();
+        String name = model.getName();
         // 2) вызов методов расчетов доходов и налога;
         model.IncomeCalculations();
         model.IncomeTaxCalculation();
@@ -37,7 +38,8 @@ public class ProductController {
 //        System.out.println("Общий доход (грн.): " + profit);
 //        System.out.println("Чистый доход (грн.): " + netIncome);
 
-        String output = "Сумма налога (грн.): " + tax + '\n' +
+        String output =  name + '\n' +
+                         "Сумма налога (грн.): " + tax + '\n' +
                          "Общий доход (грн.): " + profit + '\n' +
                          "Чистый доход (грн.): " + netIncome;
 

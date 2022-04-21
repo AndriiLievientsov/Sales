@@ -68,7 +68,7 @@ public class Product implements Income, Fiscal {
     @Override
     public void IncomeTaxCalculation() {
         tax = profit * taxRate;
-        System.out.println("Сумма налога (грн.): " + tax);
+//        System.out.println("Сумма налога (грн.): " + tax);
     }
 
     // Расчёт дохода от продаж, до уплаты налога.
@@ -76,15 +76,15 @@ public class Product implements Income, Fiscal {
     @Override
     public void IncomeCalculations() {
         profit = quantity * price;
-        System.out.println("Общий доход (грн.): " + profit);
+//        System.out.println("Общий доход (грн.): " + profit);
     }
 
     // Расчёт чистого дохода, после уплаты налога.
     // здесь ...
     @Override
     public void NetIncomeCalculation() {
-        netIncome =  tax - profit ;
-        System.out.println("Чистый доход (грн.): " + netIncome);
+        netIncome =  profit - tax  ;
+//        System.out.println("Чистый доход (грн.): " + netIncome);
 
     }
 
