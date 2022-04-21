@@ -11,6 +11,7 @@ public class Product implements Income, Fiscal {
     private String name;
     private int quantity;
     private double price;
+
     protected double profit;
     protected  double tax;
     protected  double netIncome;

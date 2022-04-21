@@ -9,8 +9,8 @@ public class App {
         // Здесь создайте экземпляры Model, View и Controller,
         // на основании соответствующих конструкторов.
         Product model = new Product();
-        SalesView view = new SalesView();
-        ProductController controller = new ProductController();
+        SalesView view = new SalesView(model);
+        ProductController controller = new ProductController(model,view);
 
         // Запуск программы/приложения.
         // Раскомментированный код будет корректным после
