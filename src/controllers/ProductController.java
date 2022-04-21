@@ -39,9 +39,9 @@ public class ProductController {
 //        System.out.println("Чистый доход (грн.): " + netIncome);
 
         String output =  name + '\n' +
-                         "Сумма налога (грн.): " + tax + '\n' +
-                         "Общий доход (грн.): " + profit + '\n' +
-                         "Чистый доход (грн.): " + netIncome;
+                "Общий доход (грн.): " + profit + '\n' +
+                "Сумма налога (грн.): " + tax + '\n' +
+                "Чистый доход (грн.): " + netIncome;
 
         view.getOutput(output);
     }
