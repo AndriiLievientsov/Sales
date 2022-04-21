@@ -26,7 +26,7 @@ public class ProductController {
         double netIncome = Rounder.getValue(model.getNetIncome());
         double tax = Rounder.getValue(model.getTax());
 
-        String output =  name + '\n' +
+        String output =  '\n' + name + '\n' +
                 "Общий доход (грн.): " + profit + '\n' +
                 "Сумма налога (грн.): " + tax + '\n' +
                 "Чистый доход (грн.): " + netIncome;
