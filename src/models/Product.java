@@ -19,6 +19,7 @@ public class Product implements Income, Fiscal {
     // Налоговоу ставку объявите в виде константы
     // здесь ...
     final double taxRate = 5.0;
+//     double b = profit / 100 * taxRate;
 
     // Обеспечьте доступ к полям модели через getters и setters
     // здесь ...
@@ -67,7 +68,7 @@ public class Product implements Income, Fiscal {
     // здесь ...
     @Override
     public void IncomeTaxCalculation() {
-        tax = profit * taxRate;
+        tax = profit / 100 * taxRate;
         System.out.println("Сумма налога (грн.): " + tax);
     }
 
@@ -83,7 +84,7 @@ public class Product implements Income, Fiscal {
     // здесь ...
     @Override
     public void NetIncomeCalculation() {
-        netIncome =  tax - profit   ;
+        netIncome = profit - tax ;
         System.out.println("Чистый доход (грн.): " + netIncome);
 
     }
