@@ -48,6 +48,7 @@ public class Validator {
              }
             price = scanner.nextFloat();
         }
+
         return price;
     }
 }

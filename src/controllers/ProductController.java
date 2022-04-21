@@ -32,5 +32,6 @@ public class ProductController {
                 "Чистый доход (грн.): " + netIncome;
 
         view.getOutput(output);
+
     }
 }
