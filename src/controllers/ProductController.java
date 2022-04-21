@@ -33,11 +33,13 @@ public class ProductController {
         double tax = Rounder.getValue(model.getTax());
 
         // 4) вывод расчетов по заданному формату.
-        System.out.println("Сумма налога (грн.): " + tax);
-        System.out.println("Общий доход (грн.): " + profit);
-        System.out.println("Чистый доход (грн.): " + netIncome);
+//        System.out.println("Сумма налога (грн.): " + tax);
+//        System.out.println("Общий доход (грн.): " + profit);
+//        System.out.println("Чистый доход (грн.): " + netIncome);
 
-        String output = "[здесь должен быть вывод по формату]";
+        String output = "Сумма налога (грн.): " + tax + '\n' +
+                         "Общий доход (грн.): " + profit + '\n' +
+                         "Чистый доход (грн.): " + netIncome;
 
         view.getOutput(output);
     }

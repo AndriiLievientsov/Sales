@@ -83,7 +83,7 @@ public class Product implements Income, Fiscal {
     // здесь ...
     @Override
     public void NetIncomeCalculation() {
-        netIncome = profit - tax;
+        netIncome =  tax - profit ;
         System.out.println("Чистый доход (грн.): " + netIncome);
 
     }
