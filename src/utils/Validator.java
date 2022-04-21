@@ -32,6 +32,7 @@ public class Validator {
             }
             quantity = scanner.nextInt();
         }
+        scanner.nextLine();
         return quantity;
     }
 
@@ -46,14 +47,11 @@ public class Validator {
         while (price <= 0) {
             System.out.println("Неверное значение! Введите цену: ");
             // здесь, реализуйте уведомление о неверном формате
-
-//             while (!scanner.hasNextFloat()){
-//                 String str = scanner.next().trim();
-//                 System.out.printf("\"%s\" - не число!\n", str);
-//                 System.out.println("Введите цену!: ");
-//             }
-
-
+             while (!scanner.hasNextFloat()){
+                 String str = scanner.next().trim();
+                 System.out.printf("\"%s\" - не число!\n", str);
+                 System.out.println("Введите цену!: ");
+             }
             price = scanner.nextFloat();
         }
         return price;
