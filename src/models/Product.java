@@ -49,9 +49,17 @@ public class Product implements Income, Fiscal {
         return taxRate;
     }
 
+    public double getProfit() {
+        return profit;
+    }
 
+    public double getTax() {
+        return tax;
+    }
 
-
+    public double getNetIncome() {
+        return netIncome;
+    }
     // Переопределите методы реализуемых интерфейсов.
 
     // Расчёт суммы налога с продаж.

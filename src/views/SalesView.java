@@ -29,18 +29,21 @@ public class SalesView {
         // ввода соответствующего значения, валидацью значения
         // через валидатор, установку валидного значения через модель.
         name = Validator.validateName(scanner);
+        model.setName(name);
 
         title = "Введите количество: ";
         // Здесь, реализуйте вывод сообщения о необходимсоти
         // ввода соответствующего значения, валидацью значения
         // через валидатор, установку валидного значения через модель.
         quantity = Validator.validateQuantityInput(scanner);
+        model.setQuantity(quantity);
 
         title = "Введите цену: ";
         // Здесь, реализуйте вывод сообщения о необходимсоти
         // ввода соответствующего значения, валидацью значения
         // через валидатор, установку валидного значения через модель.
         price = Validator.validatePriceInput(scanner);
+        model.setPrice(price);
 
         scanner.close();
 
